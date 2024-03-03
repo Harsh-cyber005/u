@@ -30,3 +30,5 @@ connectToMongoDB(process.env.DB_URL).then(() => {
 app.listen(PORT, () => {
     console.log(`Server is running on PORT ${PORT}`);
 })
+
+module.exports = app;
