@@ -3,19 +3,19 @@ const {connectToMongoDB} = require('./connect');
 const urlRoute = require('./routes/url');
 const getRoute = require('./routes/dynamic');
 const analyticsRoute = require('./routes/analytics');
-const cors = require('cors');
+// const cors = require('cors');
 require('dotenv').config();
 
-var corsOptions = {
-    // origin: 'http://localhost:5173',
-    origin: 'https://uc-tau.vercel.app',
-    optionsSuccessStatus: 201
-}
+// var corsOptions = {
+//     // origin: 'http://localhost:5173',
+//     origin: 'https://uc-tau.vercel.app',
+//     optionsSuccessStatus: 201
+// }
 
 const app = express();
 const PORT = 8000;
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use("/url", urlRoute);
