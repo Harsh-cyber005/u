@@ -7,7 +7,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 var corsOptions = {
-    origin: 'https://u-liard.vercel.app/',
+    origin: 'https://uc-tau.vercel.app/',
     optionsSuccessStatus: 201
 }
 
