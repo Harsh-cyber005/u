@@ -7,7 +7,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 var corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: 'https://u-liard.vercel.app/',
     optionsSuccessStatus: 201
 }
 
