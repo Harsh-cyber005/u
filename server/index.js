@@ -8,7 +8,7 @@ require('dotenv').config();
 
 var corsOptions = {
     origin: 'https://uc-tau.vercel.app',
-    optionsSuccessStatus: 201
+    optionsSuccessStatus: 200
 }
 
 const app = express();
