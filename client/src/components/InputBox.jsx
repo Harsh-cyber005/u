@@ -50,7 +50,7 @@ function InputBox({setOpen, open, option, setOption, options, handlePOST, filled
                   </div>
                 </div>
               </div>
-              <div className="h-1/3 w-full flex justify-center items-center pb-3">
+              <div className="h-1/4 sm:mt-0 sm:h-1/3 w-full flex justify-center items-center pb-3">
                 <button className="bg-[#1E8143] w-full h-full rounded-md border-2 border-solid border-[#2fb25f] text-2xl font-bold hover:bg-[#196836]">Shorten URL</button>
               </div>
             </form>
