@@ -8,11 +8,11 @@ function InputBox({setOpen, open, option, setOption, options, handlePOST, filled
     <div onClick={()=>{
         setOpen(false)
       }} className="bg-[#001E37] h-screen text-white select-none">
-        <header className="flex justify-between py-5 px-10">
+        <header className="flex justify-between py-5 sm:px-10 px-5">
           <section>
             <h1 className="sm:text-4xl text-2xl rrkabel">URL<br/>Shortener</h1>
           </section>
-          <section>
+          <section className="sm:text-xl sm:font-bold text-xs">
             <ul className="bg-[#066486] flex justify-center items-center rounded-md">
               <li className="w-full h-full rounded-md cursor-pointer hover:bg-[#0D97B7] px-3 py-3">Home</li>
               <li className="w-full h-full rounded-md cursor-pointer hover:bg-[#0D97B7] px-3 py-3">Shorten</li>
@@ -21,7 +21,7 @@ function InputBox({setOpen, open, option, setOption, options, handlePOST, filled
           </section>
         </header>
         <section className="flex flex-col justify-center items-center mx-5">
-          <div className={`my-5 px-4 py-2 bg-[#1B1E1F] w-[420px] sm:w-full lg:w-[600px]  border-2 border-solid border-[#414141] rounded-xl ${!filled?"h-[60vh]":"h-[68vh]"} ubuntu-regular `}>
+          <div className={`my-5 px-4 py-2 bg-[#1B1E1F] w-[320px] sm:w-full lg:w-[600px]  border-2 border-solid border-[#414141] rounded-xl ${!filled?"h-[60vh]":"h-[68vh]"} ubuntu-regular `}>
             <form className="w-full h-full flex flex-col" onSubmit={handlePOST}>
               <div className="flex flex-col h-full pb-5">
                 <div className="w-full h-full flex flex-col">
