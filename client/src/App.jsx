@@ -11,12 +11,11 @@ function App() {
   const [redirectURL, setRedirectURL] = useState("")
   const [shortenedURL, setShortenedURL] = useState("")
   
-  const options = ["localhost:8000/"]
+  const options = ["https://u-ruddy-two.vercel.app/"]
 
   const [open, setOpen] = useState(false)
   const [option, setOption] = useState(options[0])
   const [filled, setFilled] = useState(false)
-
 
   const handlePOST = async (e) => {
     e.preventDefault()
