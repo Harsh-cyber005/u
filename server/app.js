@@ -7,7 +7,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 var corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: 'https://uc-wheat.vercel.app',
 }
 
 const app = express();
